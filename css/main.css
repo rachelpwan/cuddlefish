@@ -9,15 +9,15 @@ a {
 	text-decoration: none;
 }
 
+/*List Item Stuff*/
 .list-item-image {
 	width: 10%;
 	border: 1px solid #eee;
 	padding: 4px;
 	float: left;
 	margin-left: 10px;
-	box-sizing: border-box; /*count border width, padding and size of the image*/
+	box-sizing: border-box;
 }
-
 
 .list-item-description {
 	margin-left: 12%;
@@ -26,9 +26,9 @@ a {
 .group {
 	clear: both;
 	overflow: hidden;
-		border-bottom: 1px solid #eee;
-		padding-bottom: 10px;
-		margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .list-item-header {
@@ -42,6 +42,8 @@ a {
 	display: block;
 	font-size: 12px;
 	color: #999;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .container {
@@ -50,14 +52,79 @@ a {
 	width: 662px;
 }
 
-.list-item-hover:visited {
-}
-
 .list-item-hover:hover .list-item-image {
 	background: #eee;
 }
 
 .list-item-hover:hover .list-item-header {
-	color: black;
+	color: #333333;
+}
 
+/*Linking Button*/
+.button {
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border: 1px solid;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  height: 29px;
+  width: 115px;
+  margin-left: 12%;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #e7e9ec, #f7f8fa);
+  /*I swapped the color values as my hover state*/
+}
+
+.button:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px rgba (228,121,17,0.5);
+}
+
+.button-text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 29px;
+  display: block;
+  font-family: 'Arial', sans-serif;
+  color: #111111;
+  cursor: pointer;
+  padding-left: 11px;
+  padding-right: 10px;
+}
+
+/*Toggle Button*/
+.toggle-button {
+  background: #ffffff;
+  border: 1px solid;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  height: 29px;
+  width: 115px;
+  margin-left: 12%;
+}
+
+.toggle-button:hover {
+  background: #e7e9ec; /*Grey bg on toggle-button hover*/
+}
+
+.toggle-button:focus {
+  border-color: #e77600; /*Orange border*/
+  box-shadow: 0 0 3px rgba (228,121,17,0.5); /*The outerglow that accompanies the border color*/
+}
+
+.toggle-button-text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 29px;
+  display: block;
+  font-family: 'Arial', sans-serif;
+  color: #111111;
+  cursor: pointer; /*This is to change the mouse pointer to show it's clickable/interactive*/
+  padding-left: 11px;
+  padding-right: 10px;
 }

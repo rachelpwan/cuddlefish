@@ -4,20 +4,31 @@
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 <body>
-<div class="container">
+  <div class="container">
     <ol class="slats">
       <li class="group">
         <a href="#" class="list-item-hover"><img class="list-item-image" src="images/dogtreats.jpg" alt="thumbnail"></a>
         <a href="#" class="list-item-hover"><h3 class="list-item-header">This is the title</h3></a>
         <p class="list-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="list-item-date">August 10, 2011</span></p>
-      
+        <a href="http://www.rachelwan.com" class="button">
+          <span class="button-text">Add To Cart</span></a>
+        <a href="#" class="toggle-button">
+          <span class="toggle-button-text">Selected</span></a>
+        <a href="#" class="toggle-button">
+          <span class="toggle-button-text">Unselected</span></a>
+          <!--See above... I was able to get my focus state to work because of the <a> tag wrapping around my "linking button", but I ran into something weird with the focus state not happening on the "togglable button", so I wrapped it in an href-less <a href="#"></a>. I'm not sure why it's happening. Using an empty 'a=href' seems like cheating! The AUI code did this using ':focus' on the toggle-button class but it wasn't working for me. Help!!-->
       </li>
-
       <li class="group">
         <a href="#" class="list-item-hover"><img class="list-item-image" src="images/dogtreats.jpg" alt="thumbnail"/></a>
         <a href="#" class="list-item-hover"><h3 class="list-item-header">This is the title</h3></a>
         <p class="list-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="list-item-date">August 10, 2011</span></p>
-
+        <a href="http://www.rachelwan.com" class="button">
+          <span class="button-text">Add To Cart</span></a>
+          <!--:O Below shows what it looks like without the a href wrapping the button. Focus state doesn't seem to work!-->
+        <span class="toggle-button">
+          <span class="toggle-button-text">Selected</span></span>
+        <span class="toggle-button">
+          <span class="toggle-button-text">Unselected</span></span>
       </li>
     </ol> 
   </div>
