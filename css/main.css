@@ -1,70 +1,78 @@
 body {
-	font-family: Arial, sans-serif;
-	color: #555;
-	line-height: 1.4;
-	font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #555;
+  line-height: 1.4;
+  font-size: 14px;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /*List Item Stuff*/
 .list-item-image {
-	width: 10%;
-	border: 1px solid #eee;
-	padding: 4px;
-	float: left;
-	margin-left: 10px;
-	box-sizing: border-box;
+  width: 10%;
+  border: 1px solid #eee;
+  padding: 4px;
+  float: left;
+  margin-left: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .list-item-description {
-	margin-left: 12%;
+  margin-left: 12%;
 }
 
 .group {
-	clear: both;
-	overflow: hidden;
-	border-bottom: 1px solid #eee;
-	padding-bottom: 25px;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 25px;
   padding-top: 25px;
 }
 
 .list-item-header {
-	font-size: 18px;
-	font-weight: bold;
-	color: #2790ae;
-	margin-left: 12%;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2790ae;
+  margin-left: 12%;
 }
 
 .list-item-date {
-	display: block;
-	font-size: 12px;
-	color: #999;
+  display: block;
+  font-size: 12px;
+  color: #999;
   padding-bottom: 10px;
   padding-top: 5px;
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
-	width: 662px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 662px;
 }
 
 .list-item-hover:hover .list-item-image {
-	background: #eee;
+  background: #eee;
 }
 
 .list-item-hover:hover .list-item-header {
-	color: #333333;
+  color: #333;
 }
 
-/*Linking Button*/
+/* Linking Button */
 .button {
-  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  background: -webkit-linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  background: -ms-linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  background: -o-linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  background: -moz-linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   border: 1px solid;
-  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-color: #a88734 #9c7e31 #846a29;
   text-align: center;
   display: inline-block;
   border-radius: 3px;
@@ -74,13 +82,17 @@ a {
 }
 
 .button:hover {
-  background: linear-gradient(to bottom, #e7e9ec, #f7f8fa);
-  /*I swapped the color values as my hover state*/
+  background: -webkit-linear-gradient(to bottom, #f0c14b, #f7dfa5);
+  background: -ms-linear-gradient(to bottom, #f0c14b, #f7dfa5);
+  background: -o-linear-gradient(to bottom, #f0c14b, #f7dfa5);
+  background: -moz-linear-gradient(to bottom, #f0c14b, #f7dfa5);
+  background: linear-gradient(to bottom, #f0c14b, #f7dfa5);
+  /* I swapped the color values as my hover state */
 }
 
 .button:focus {
   border-color: #e77600;
-  box-shadow: 0 0 3px rgba (228,121,17,0.5);
+  box-shadow: 0 0 3px rgba(228,121,17,0.5);
 }
 
 .button-text {
@@ -88,16 +100,16 @@ a {
   font-size: 13px;
   line-height: 29px;
   display: block;
-  font-family: 'Arial', sans-serif;
-  color: #111111;
+  font-family: Arial, sans-serif;
+  color: #111;
   cursor: pointer;
   padding-left: 11px;
   padding-right: 10px;
 }
 
-/*Toggle Button*/
+/* Toggle Button */
 .toggle-button {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid;
   border-color: #adb1b8 #a2a6ac #8d9096;
   text-align: center;
@@ -109,12 +121,12 @@ a {
 }
 
 .toggle-button:hover {
-  background: #e7e9ec; /*Grey bg on toggle-button hover*/
+  background: #e7e9ec;
 }
 
 .toggle-button:focus {
-  border-color: #e77600; /*Orange border*/
-  box-shadow: 0 0 3px rgba (228,121,17,0.5); /*The outerglow that accompanies the border color*/
+  border-color: #e77600; /* Orange border */
+  box-shadow: 0 0 3px rgba(228,121,17,0.5); /* The outerglow that accompanies the border color */
 }
 
 .toggle-button-text {
@@ -122,9 +134,94 @@ a {
   font-size: 13px;
   line-height: 29px;
   display: block;
-  font-family: 'Arial', sans-serif;
-  color: #111111;
-  cursor: pointer; /*This is to change the mouse pointer to show it's clickable/interactive*/
+  font-family: Arial, sans-serif;
+  color: #111;
+  cursor: pointer;
   padding-left: 11px;
   padding-right: 10px;
+}
+
+.input-text-container {
+  margin-left: 12%;
+  padding-top: 15px;
+}
+
+.input-text {
+  font-family: Arial;
+  font-weight: bold;
+  color: #000;
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #e77600;
+  box-shadow: 0 0 3px rgba(228,121,17,0.5);
+}
+
+input {
+  height: 31px;
+  width: 300px;
+  padding: 3px 7px;
+  border: 1px solid;
+  border-color: #adb1b8 #a2a6ac #8d9096;
+}
+
+/* Prime Logo */
+.prime-logo-sprite {
+  background-image: url(../images/prime-logo-sprite.png);
+  background-repeat: no-repeat;
+  background-size: 400px 650px;
+  display: inline-block;
+  background-position: -5px -489px;
+  vertical-align: baseline;
+  width: 52px;
+  height: 16px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 12%;
+}
+
+.prime-logo {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+/* Review Stars */
+.reviews {
+  clear: both;
+  overflow: hidden;
+  margin-top: 20000px;
+}
+
+.reviews-container {
+  vertical-align: middle;
+}
+
+.review-stars {
+  background-image: url(../images/prime-logo-sprite.png);
+  background-repeat: no-repeat;
+  background-size: 400px 650px;
+  display: inline-block;
+  background-position: -175px -368px;
+  width: 80px;
+  height: 18px;
+  box-sizing: border-box;
+  margin-left: 12%;
+  /* Review stars is too high, I'm trying to align it to the review number */
+}
+
+.review-star-number {
+  display: inline-block;
+}
+
+a.review-star-number:active {
+  font-size: 13px;
+  box-sizing: border-box;
+  color: #0066c0;
+}
+
+a.review-star-number:visited {
+  color: #0066c0;
 }
