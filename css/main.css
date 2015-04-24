@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
+  font-size: 14px;
   color: #555;
   line-height: 1.4;
-  font-size: 14px;
 }
 
 a {
@@ -10,7 +10,7 @@ a {
 }
 
 /*List Item Stuff*/
-.list-item-image {
+.list__item__image {
   width: 10%;
   border: 1px solid #eee;
   padding: 4px;
@@ -23,11 +23,11 @@ a {
   box-sizing: border-box;
 }
 
-.list-item-description {
+.list__item__description {
   margin-left: 12%;
 }
 
-.group {
+.list__item {
   clear: both;
   overflow: hidden;
   border-bottom: 1px solid #eee;
@@ -35,14 +35,14 @@ a {
   padding-top: 25px;
 }
 
-.list-item-header {
+.list__item__header {
   font-size: 18px;
   font-weight: bold;
   color: #2790ae;
   margin-left: 12%;
 }
 
-.list-item-date {
+.list__item__date {
   display: block;
   font-size: 12px;
   color: #999;
@@ -50,17 +50,17 @@ a {
   padding-top: 5px;
 }
 
-.container {
+.list__item__container {
   margin-left: auto;
   margin-right: auto;
   width: 662px;
 }
 
-.list-item-hover:hover .list-item-image {
+.list__item--hover:hover .list__item__image {
   background: #eee;
 }
 
-.list-item-hover:hover .list-item-header {
+.list__item--hover:hover .list__item__header {
   color: #333;
 }
 
@@ -87,7 +87,6 @@ a {
   background: -o-linear-gradient(to bottom, #f0c14b, #f7dfa5);
   background: -moz-linear-gradient(to bottom, #f0c14b, #f7dfa5);
   background: linear-gradient(to bottom, #f0c14b, #f7dfa5);
-  /* I swapped the color values as my hover state */
 }
 
 .button:focus {
@@ -95,20 +94,20 @@ a {
   box-shadow: 0 0 3px rgba(228,121,17,0.5);
 }
 
-.button-text {
-  text-align: center;
-  font-size: 13px;
-  line-height: 29px;
-  display: block;
+.button__text {
   font-family: Arial, sans-serif;
+  font-size: 13px;
   color: #111;
+  line-height: 29px;
+  text-align: center;
+  display: block;
   cursor: pointer;
   padding-left: 11px;
   padding-right: 10px;
 }
 
 /* Toggle Button */
-.toggle-button {
+.toggle--button {
   background: #fff;
   border: 1px solid;
   border-color: #adb1b8 #a2a6ac #8d9096;
@@ -120,16 +119,16 @@ a {
   margin-left: 12%;
 }
 
-.toggle-button:hover {
+.toggle--button:hover {
   background: #e7e9ec;
 }
 
-.toggle-button:focus {
-  border-color: #e77600; /* Orange border */
-  box-shadow: 0 0 3px rgba(228,121,17,0.5); /* The outerglow that accompanies the border color */
+.toggle--button:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 3px rgba(228,121,17,0.5);
 }
 
-.toggle-button-text {
+.toggle--button__text {
   text-align: center;
   font-size: 13px;
   line-height: 29px;
@@ -141,16 +140,16 @@ a {
   padding-right: 10px;
 }
 
-.input-text-container {
+.input__text__container {
   margin-left: 12%;
   padding-top: 15px;
 }
 
-.input-text {
-  font-family: Arial;
+.input__text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
   font-weight: bold;
   color: #000;
-  font-size: 13px;
   padding-bottom: 3px;
 }
 
@@ -169,21 +168,22 @@ input {
 }
 
 /* Prime Logo */
-.prime-logo-sprite {
-  background-image: url(../images/prime-logo-sprite.png);
+.prime-logo__sprite {
+  background-image: url('../images/prime-logo-sprite.png');
   background-repeat: no-repeat;
   background-size: 400px 650px;
-  display: inline-block;
   background-position: -5px -489px;
+  display: inline-block;
   vertical-align: baseline;
   width: 52px;
   height: 16px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin-top: 10px;
   margin-left: 12%;
 }
 
-.prime-logo {
+.prime-logo__image {
   padding-top: 10px;
   padding-left: 20px;
 }
@@ -195,11 +195,11 @@ input {
   margin-top: 20000px;
 }
 
-.reviews-container {
+.reviews__container {
   vertical-align: middle;
 }
 
-.review-stars {
+.reviews__stars {
   background-image: url(../images/prime-logo-sprite.png);
   background-repeat: no-repeat;
   background-size: 400px 650px;
@@ -208,20 +208,21 @@ input {
   width: 80px;
   height: 18px;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin-left: 12%;
-  /* Review stars is too high, I'm trying to align it to the review number */
 }
 
-.review-star-number {
+.reviews__star__number {
   display: inline-block;
 }
 
-a.review-star-number:active {
+a.reviews__star__number:active {
   font-size: 13px;
+  line-height: 18px;
   box-sizing: border-box;
   color: #0066c0;
 }
 
-a.review-star-number:visited {
+a.reviews__star__number:visited {
   color: #0066c0;
 }
