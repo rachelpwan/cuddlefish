@@ -1,45 +1,58 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="css/grid.css"/>
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.scss"/>
+    <link rel="stylesheet" type="text/css" href="css/ss-symbolicons-block.css"/>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <!--JavaScript-->
+  <script src="js/ss-symbolicons.js"/></script>
 </head>
 <body>
-  <div class="list__container">
-    <ol class="list">
-      <li class="list__item">
-        <a href="#" class="list__item--hover">
-          <img class="list__item__image" src="images/dogtreats.jpg" alt="thumbnail">
+
+  <!-- Start of grid container --> 
+  <div class="grid">
+    <!-- Start of column -->
+    <div class="grid__col grid__col--1-of-6">
+      <a href="#" class="list__item--hover">
+        <img class="list__item__image" src="images/dogtreats.jpg" alt="thumbnail">
+      </a>
+    </div>
+    <!-- Start of column -->
+    <div class="grid__col grid__col--5-of-6">
+      <a href="#" class="list__item--hover">
+        <h3 class="list__item__header"><i class="ss-sunface"></i>This is the title</h3>
+      </a>
+      <p class="list__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="list__item__date">August 10, 2011</span></p>
+      <a href="http://www.rachelwan.com" class="button">
+        <span class="button__text">Add To Cart</span>
+      </a>
+      <a href="#" class="toggle--button">
+        <span class="toggle--button__text">Selected</span>
+      </a>
+      <a href="#" class="toggle--button">
+        <span class="toggle--button__text">Unselected</span>
+      </a>
+      <div class="input__text__container">
+        <div class="input__text">Text Input</div>
+        <input type="text" placeholder="Type something in here">
+        <a href="http://www.google.com" class="button">
+          <span class="button__text">Search</span>
         </a>
-        <a href="#" class="list__item--hover"><h3 class="list__item__header">This is the title</h3></a>
-        <p class="list__item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="list__item__date">August 10, 2011</span></p>
-        
-        <a href="http://www.rachelwan.com" class="button">
-          <span class="button__text">Add To Cart</span>
-        </a>
-        <a href="#" class="toggle--button">
-          <span class="toggle--button__text">Selected</span>
-        </a>
-        <a href="#" class="toggle--button">
-          <span class="toggle--button__text">Unselected</span></a>
-        
-        <div class="input__text__container">
-          <div class="input__text">Text Input</div>
-          <input type="text" placeholder="Type something in here">
-          <a href="http://www.google.com" class="button">
-            <span class="button__text">Search</span>
-          </a>
-        </div>
-        
-        <i class="prime-logo__sprite"></i>
-        <img class="prime-logo__image" src="images/prime-logo.png"/>
-        
-        <div class="reviews__container">
-          <i class="reviews__stars"></i>
-          <a href="#reviews" class="reviews__star__number">(499)</a>
-        </div>
-      </li>
-      <li class="list__item">
+      </div>
+      <i class="prime-logo__sprite"></i>
+      <img class="prime-logo__image" src="images/prime-logo.png"/>
+      <div class="reviews__container">
+        <i class="reviews__stars"></i>
+        <a href="#reviews" class="reviews__star__number">(499)</a>
+      </div>
+    </div>
+  </div> <!-- End of grid -->
+
+
+
+      <!-- li class="list__item">
         <a href="#" class="list__item--hover"><img class="list__item__image" src="images/dogtreats.jpg" alt="thumbnail"/>
         </a>
         <a href="#" class="list__item--hover"><h3 class="list__item__header">This is the title</h3>
@@ -54,7 +67,7 @@
         <span class="toggle--button">
           <span class="toggle--button__text">Unselected</span>
         </span>
-      </li>
+      </li -->
     </ol>
     <div id="reviews" class="reviews"></div>
   </div>
