@@ -1,3 +1,5 @@
+@import "bourbon/bourbon";
+
 //text-colors
 $a-base-color-desktop: #333 !default; // black
 $a-base-color-mobile: #111 !default; //black on small screen, higher contrast
@@ -7,7 +9,7 @@ $a-tertiary-color-desktop: #767676 !default; // Lighter Grey
 $a-tertiary-color-mobile: #999 !default; // Lighter Grey on small screen
 $a-state-color: #C45500 !default; // orange
 $a-price-color: #B12704 !default; // red
-$a-link-color: #0066C0 !default; // rlue
+$a-link-color: #0066C0 !default; // blue
 
 //alert-colors
 $a-error-color: #d00 !default; // red
@@ -52,6 +54,7 @@ $a-mobile-spacing-large: 2.1rem;
 $a-mobile-spacing-extra-large: 2.5rem;
 $a-mobile-spacing-double-large: 4.2rem;
 
+
 body {
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
@@ -71,11 +74,7 @@ a {
 
 /* List Item Stuff */
 .list__item__image {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
   padding: 4px;
   border: 1px solid #eee;
   width: 100%;
@@ -128,20 +127,11 @@ a {
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
   border-radius: 3px;
-  
-  background: -webkit-linear-gradient(to bottom, #f7dfa5, #f0c14b);
-  background: -ms-linear-gradient(to bottom, #f7dfa5, #f0c14b);
-  background: -o-linear-gradient(to bottom, #f7dfa5, #f0c14b);
-  background: -moz-linear-gradient(to bottom, #f7dfa5, #f0c14b);
-  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  @include background(linear-gradient(to bottom, #f7dfa5, #f0c14b));
 }
 
 .button:hover {
-  background: -webkit-linear-gradient(to bottom, #f0c14b, #f7dfa5);
-  background: -ms-linear-gradient(to bottom, #f0c14b, #f7dfa5);
-  background: -o-linear-gradient(to bottom, #f0c14b, #f7dfa5);
-  background: -moz-linear-gradient(to bottom, #f0c14b, #f7dfa5);
-  background: linear-gradient(to bottom, #f0c14b, #f7dfa5);
+  @include background(linear-gradient(to bottom, #f0c14b, #f7dfa5));
 }
 
 .button:focus {
@@ -173,7 +163,7 @@ a {
 }
 
 .toggle--button:hover {
-  background: #e7e9ec;
+  @include background(#e7e9ec);
 }
 
 .toggle--button:focus {
@@ -216,7 +206,7 @@ input {
   height: 31px;
   padding: 3px 7px;
   border: 1px solid;
-  border-color: #adb1b8 #a2a6ac #8d9096;
+  @ include border-color(#adb1b8 #a2a6ac #8d9096);
 }
 
 /* Prime Logo */
