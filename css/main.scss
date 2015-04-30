@@ -1,12 +1,12 @@
 @import "bourbon/bourbon";
 
 //text-colors
-$a-base-color-desktop: #333 !default; // black
-$a-base-color-mobile: #111 !default; //black on small screen, higher contrast
-$a-secondary-color-desktop: #888 !default; // gray
-$a-secondary-color-mobile: #666 !default; // gray on small screen
-$a-tertiary-color-desktop: #767676 !default; // Lighter Grey
-$a-tertiary-color-mobile: #999 !default; // Lighter Grey on small screen
+$a-desktop-base-color: #333 !default; // black
+$a-mobile-base-color: #111 !default; // black on small screen, higher contrast
+$a-desktop-secondary-color: #888 !default; // gray
+$a-mobile-secondary-color: #666 !default; // gray on small screen
+$a-desktop-tertiary-color: #767676 !default; // Lighter Grey
+$a-mobile-tertiary-color: #999 !default; // lighter Grey on small screen
 $a-state-color: #C45500 !default; // orange
 $a-price-color: #B12704 !default; // red
 $a-link-color: #0066C0 !default; // blue
@@ -18,11 +18,11 @@ $a-info-color: #BBD3DE !default; // blueish
 $a-warning-color: #ffd63f !default; // yellow-orangeish
 
 //structural-colors
-$a-border-color: #ddd !default; // Light gray border
-$a-border-color-variant: #e7e7e7 !default; // even LIGHTER gray border
+$a-border-color: #ddd !default; // light gray border
+$a-border-color-variant: #e7e7e7 !default; // even lighter gray border
 $a-thumb-border: #e0e0e0 !default;
-$a-alternate-background-color: #f3f3f3 !default; // Light gray bg
-$a-offset-background-color: lighten($a-alternate-background-color, 1%) !default; // even LIGHTER gray bg
+$a-alternate-background-color: #f3f3f3 !default; // light gray bg
+$a-offset-background-color: lighten($a-alternate-background-color, 1%) !default; // even lighter gray bg
 $a-base-background-color: #fff !default; // White bg
 $a-nav-gradient-end: #eee !default;
 
